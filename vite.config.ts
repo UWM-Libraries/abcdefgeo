@@ -33,7 +33,6 @@ export default defineConfig(({ mode }) => {
     },
     optimizeDeps: {
       exclude: [
-        'lucide-react',
         '@geoblacklight/frontend',
         'geoblacklight/controllers/leaflet_viewer_controller',
         'geoblacklight/controllers/openlayers_viewer_controller',
@@ -42,7 +41,7 @@ export default defineConfig(({ mode }) => {
         'geoblacklight/controllers/downloads_controller',
         'geoblacklight/controllers/clipboard_controller',
       ],
-      include: ['react-helmet-async', 'h3-js'],
+      include: ['react-helmet-async', 'h3-js', 'lucide-react'],
     },
   };
 });
