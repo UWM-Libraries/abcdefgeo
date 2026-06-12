@@ -101,7 +101,9 @@ api:
   turnstile_status_path: /turnstile/status
   turnstile_verify_path: /turnstile/verify
   client_name: opengeometadata-viewer
-  default_query_params: []
+  default_query_params:
+    - include_filters[schema_provider_s][]=American Geographical Society Library – UWM Libraries
+    - include_filters[gbl_resourceType_sm][]=Index maps
 navigation:
   utility_links:
     - href: /search?q=
